@@ -1,0 +1,19 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-background: #FAF9F6;
+  --color-secondary: #E6E1DA;
+  --color-textmain: #222222;
+  --color-accent: #C07F63;
+
+  /* Custom Fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Merriweather", serif;
+}
+
+/* Menerapkan warna kustom ke body (Base Styles) */
+body {
+  @apply bg-background text-textmain antialiased selection:bg-accent selection:text-white;
+}
