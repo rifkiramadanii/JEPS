@@ -3,8 +3,8 @@ import axios from 'axios';
 
 // Mengambil URL backend dan ID Jurnal dari file .env (Vite)
 // Jika .env gagal terbaca, kita beri nilai default (fallback) ke 'jeps'
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000/api';
-const JOURNAL_ID = import.meta.env.VITE_JOURNAL_ID || 'jeps'; 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const JOURNAL_ID = import.meta.env.VITE_JOURNAL_ID; 
 
 // Konfigurasi Axios mengarah ke Backend Node.js, BUKAN ke OJS langsung
 const apiClient = axios.create({
